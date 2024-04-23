@@ -10,8 +10,8 @@ const DB = process.env.DATABASE.replace(
 );
 
 mongoose
-  // .connect(process.env.DATABASE_LOCAL, {
-  .connect(DB, {
+  .connect(process.env.DATABASE_LOCAL, {
+    // .connect(DB, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
@@ -23,9 +23,7 @@ mongoose
   .catch((error) => console.log(error));
 
 // Read JSON file
-const tours = JSON.parse(
-  fs.readFileSync(`${__dirname}/tours-simple.json`, 'utf-8')
-);
+const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours.json`, 'utf-8'));
 
 // Import Data Into DB
 const importData = async () => {

@@ -1,0 +1,26 @@
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
+.Trash
+.AppleDouble
+
+# Application specific files
+node_modules/
+~$*
+
+/.idea
+/.vagrant
+
+npm-debug.log
+yarn-error.log
+
+.local
+*.log
+*.map
+.tmp
+
+# Project specific files

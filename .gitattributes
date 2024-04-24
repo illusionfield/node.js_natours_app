@@ -1,0 +1,18 @@
+* text=auto
+
+*.css linguist-vendored
+*.scss linguist-vendored
+*.js linguist-vendored
+
+CHANGELOG.md export-ignore
+
+*.txt text
+*.sh eol=lf
+*.env eol=lf
+*.json eol=lf
+
+*.docx diff=word
+
+*.png diff=exif
+*.jpg diff=exif
+
